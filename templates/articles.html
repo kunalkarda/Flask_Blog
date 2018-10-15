@@ -1,0 +1,10 @@
+{%extends "base.html"%}
+
+{%block content%}
+<ul class="list-group"><br>
+{%for article in articles%}
+    <li class=list-group-item><a href="articles/{{article.id}}">{{article.title}}</a></li>
+    <br>
+
+    {%endfor%}
+{%endblock%}

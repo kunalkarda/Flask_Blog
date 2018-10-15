@@ -1,0 +1,17 @@
+{%extends "base.html"%}
+
+{%block content%}
+
+<div class="jumbotron text-center">
+    <h1>News</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt illo repudiandae ipsum ullam tenetur? Sint dolorem quidem ratione reprehenderit tenetur, tempora recusandae. Iste, sapiente iure? Minus eveniet autem consequatur quibusdam?</p>
+
+
+{%if session.logged_in == NULL%}
+
+    <a href="/register" class="btn btn-primary btn-lg ">Register</a>
+    <a href="/login" class="btn btn-success btn-lg">Login</a>
+
+{%endif%}
+</div>
+{%endblock%}
